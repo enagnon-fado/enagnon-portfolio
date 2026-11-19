@@ -1107,3 +1107,62 @@ footer {
   }
 }
 
+/* ==========================================
+   AJUSTEMENT FINAL DU PORTRAIT ET DES TEXTES
+========================================== */
+
+/* Réduire la photo pour mieux respecter le cercle */
+.hero-visual.hero-portrait .portrait-photo {
+  width: 55% !important;
+  height: 82% !important;
+  left: 52% !important;
+  bottom: 0 !important;
+  top: auto !important;
+  overflow: visible !important;
+  z-index: 3 !important;
+}
+
+.hero-visual.hero-portrait .portrait-image {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: center bottom !important;
+}
+
+/* DATA reste à gauche */
+.hero-visual.hero-portrait .portrait-data {
+  top: 43% !important;
+  left: -3% !important;
+  z-index: 4 !important;
+}
+
+/* ANALYST revient en bas à droite */
+.hero-visual.hero-portrait .portrait-analyst {
+  position: absolute !important;
+  top: auto !important;
+  bottom: 10% !important;
+  right: -5% !important;
+  z-index: 4 !important;
+}
+
+/* Adaptation mobile */
+@media (max-width: 700px) {
+  .hero-visual.hero-portrait .portrait-photo {
+    width: 62% !important;
+    height: 78% !important;
+    left: 50% !important;
+  }
+
+  .hero-visual.hero-portrait .portrait-data {
+    left: 0 !important;
+    top: 43% !important;
+  }
+
+  .hero-visual.hero-portrait .portrait-analyst {
+    top: auto !important;
+    bottom: 5% !important;
+    right: 0 !important;
+    font-size: clamp(2.2rem, 9vw, 3.5rem) !important;
+  }
+}
+
