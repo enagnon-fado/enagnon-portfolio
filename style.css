@@ -1334,3 +1334,60 @@ footer {
     overflow-wrap: anywhere;
   }
 }
+
+/* ==========================================
+   CORRECTION DEFINITIVE DES ICONES CONTACT
+========================================== */
+
+/* Taille des cercles contenant les icônes */
+.contact-list .contact-item .contact-icon {
+    width: 42px !important;
+    height: 42px !important;
+    min-width: 42px !important;
+    min-height: 42px !important;
+    flex: 0 0 42px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    color: #b7df68 !important;
+    background: transparent !important;
+    border: 1px solid #52665d !important;
+    border-radius: 50% !important;
+}
+
+/* Taille et couleur des SVG */
+.contact-list .contact-item .contact-icon svg {
+    width: 19px !important;
+    height: 19px !important;
+    min-width: 19px !important;
+    min-height: 19px !important;
+    max-width: 19px !important;
+    max-height: 19px !important;
+
+    display: block !important;
+    fill: none !important;
+    stroke: #b7df68 !important;
+    stroke-width: 2.2 !important;
+}
+
+/* Logo LinkedIn */
+.contact-list .contact-item .linkedin-icon {
+    width: 42px !important;
+    height: 42px !important;
+    min-width: 42px !important;
+    min-height: 42px !important;
+
+    flex: 0 0 42px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    color: #ffffff !important;
+    background: #0a66c2 !important;
+    border: none !important;
+    border-radius: 8px !important;
+    font-size: 19px !important;
+    font-weight: 700 !important;
+}
