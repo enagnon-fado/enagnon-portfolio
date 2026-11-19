@@ -1409,3 +1409,7 @@ footer .back-to-top {
 .back-to-top:hover {
     color: #ffffff;
 }
+/* CORRECTION : remonter le portrait dans le cercle bleu */
+.hero-visual.hero-portrait .portrait-photo {
+  bottom: 15% !important;
+}
