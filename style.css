@@ -1043,3 +1043,67 @@ footer {
   }
 }
 
+/* ==========================================
+   PORTRAIT FINAL - PHOTO DETOUREE
+========================================== */
+
+.hero-visual.hero-portrait .portrait-photo {
+  position: absolute;
+  width: 68%;
+  height: 94%;
+  left: 53%;
+  bottom: 0;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: visible;
+  z-index: 3;
+  background: transparent;
+  border-radius: 0;
+}
+
+.hero-visual.hero-portrait .portrait-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+}
+
+/* DATA à gauche */
+.hero-visual.hero-portrait .portrait-data {
+  left: -3%;
+  top: 43%;
+  z-index: 4;
+}
+
+/* ANALYST en bas à droite */
+.hero-visual.hero-portrait .portrait-analyst {
+  top: auto;
+  bottom: 10%;
+  right: -5%;
+  z-index: 4;
+}
+
+/* Adaptation mobile */
+@media (max-width: 700px) {
+  .hero-visual.hero-portrait .portrait-photo {
+    width: 75%;
+    height: 90%;
+    left: 50%;
+  }
+
+  .hero-visual.hero-portrait .portrait-data {
+    left: 0;
+    top: 43%;
+  }
+
+  .hero-visual.hero-portrait .portrait-analyst {
+    top: auto;
+    bottom: 5%;
+    right: 0;
+    font-size: clamp(2.2rem, 9vw, 3.5rem);
+  }
+}
+
