@@ -709,11 +709,17 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
+  gap: 25px;
   color: #8193a9;
   font-size: .72rem;
 }
 
+footer .back-to-top {
+  flex-shrink: 0;
+  white-space: nowrap;
+  color: var(--teal);
+  font-weight: 700;
+}
 
 /* ==========================================
    13. TABLETTE
