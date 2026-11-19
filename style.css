@@ -1166,3 +1166,63 @@ footer {
   }
 }
 
+
+/* ==========================================
+   PORTRAIT ENTIER DANS LE CERCLE BLEU-GRIS
+========================================== */
+
+.hero-visual.hero-portrait .portrait-photo {
+  width: 43% !important;
+  height: 70% !important;
+  left: 52% !important;
+  bottom: 10% !important;
+  top: auto !important;
+  transform: translateX(-50%) !important;
+  overflow: visible !important;
+  z-index: 3 !important;
+  background: transparent !important;
+}
+
+.hero-visual.hero-portrait .portrait-image {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: center bottom !important;
+}
+
+/* DATA à gauche du cercle */
+.hero-visual.hero-portrait .portrait-data {
+  left: -3% !important;
+  top: 43% !important;
+  z-index: 4 !important;
+}
+
+/* ANALYST en bas à droite */
+.hero-visual.hero-portrait .portrait-analyst {
+  top: auto !important;
+  bottom: 10% !important;
+  right: -5% !important;
+  z-index: 4 !important;
+}
+
+/* Adaptation mobile */
+@media (max-width: 700px) {
+  .hero-visual.hero-portrait .portrait-photo {
+    width: 48% !important;
+    height: 66% !important;
+    left: 50% !important;
+    bottom: 12% !important;
+  }
+
+  .hero-visual.hero-portrait .portrait-data {
+    left: 0 !important;
+    top: 43% !important;
+  }
+
+  .hero-visual.hero-portrait .portrait-analyst {
+    top: auto !important;
+    bottom: 5% !important;
+    right: 0 !important;
+  }
+}
