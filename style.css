@@ -1391,3 +1391,15 @@ footer {
     font-size: 19px !important;
     font-weight: 700 !important;
 }
+/* Lien retour en haut */
+.back-to-top {
+    color: var(--teal);
+    font-weight: 700;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    transition: color 0.25s ease;
+}
+
+.back-to-top:hover {
+    color: #ffffff;
+}
