@@ -942,3 +942,23 @@ footer {
     padding: 70px 6%;
   }
 }
+/* Logos des cartes de compétences */
+
+.skill-logo-title {
+  height: 58px;
+  display: flex;
+  align-items: center;
+  margin: 17px 0 10px;
+}
+
+.skill-logo {
+  width: 58px;
+  height: 58px;
+  object-fit: contain;
+}
+
+.skill-svg-logo {
+  width: 58px;
+  height: 58px;
+  display: block;
+}
