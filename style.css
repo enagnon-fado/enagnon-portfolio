@@ -1052,21 +1052,20 @@ footer .back-to-top {
 /* ==========================================
    PORTRAIT FINAL - PHOTO DETOUREE
 ========================================== */
-
 .hero-visual.hero-portrait .portrait-photo {
   position: absolute;
   width: 68%;
-  height: 94%;
-  left: 53%;
-  bottom: 0;
+  height: 90%;
+  left: 50%;
+  bottom: 5%;
   transform: translateX(-50%);
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
-  overflow: visible;
+  overflow: hidden;
   z-index: 3;
   background: transparent;
-  border-radius: 0;
+  border-radius: 50%;
 }
 
 .hero-visual.hero-portrait .portrait-image {
