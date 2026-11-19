@@ -1074,6 +1074,7 @@ footer .back-to-top {
   height: 100%;
   object-fit: contain;
   object-position: center bottom;
+  transform: translateY(-40px);
 }
 
 /* DATA à gauche */
