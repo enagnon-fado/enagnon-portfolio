@@ -962,3 +962,26 @@ footer {
   height: 58px;
   display: block;
 }
+
+/* ==========================================
+   CORRECTION : TAILLE DES LOGOS COMPÉTENCES
+========================================== */
+
+.skill-card .skill-logo-title {
+  height: 65px !important;
+  display: flex;
+  align-items: center;
+  margin: 12px 0 10px !important;
+}
+
+.skill-card .skill-logo-title .skill-logo,
+.skill-card .skill-logo-title .skill-svg-logo {
+  width: 48px !important;
+  height: 48px !important;
+  max-width: 48px !important;
+  max-height: 48px !important;
+  object-fit: contain;
+  display: block;
+  flex: 0 0 48px;
+}
+
