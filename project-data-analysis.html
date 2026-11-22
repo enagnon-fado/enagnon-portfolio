@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Étude de cas : nettoyage, exploration et analyse de données avec Python, Pandas, NumPy, Matplotlib et SciPy.">
+  <title>Analyse exploratoire de données | Jacques Philippe FADONOUGBO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html#home" aria-label="Retour à l'accueil">JP<span>.</span><small>DATA</small></a>
+    <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="index.html#home">Accueil</a>
+      <a href="index.html#about">À propos</a>
+      <a href="index.html#skills">Compétences</a>
+      <a href="index.html#projects">Projets</a>
+      <a href="index.html#journey">Parcours</a>
+      <a href="index.html#contact" class="nav-contact">Contact ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section case-hero">
+      <div class="case-breadcrumb"><a href="index.html#projects">← Retour aux projets</a> / Étude de cas</div>
+      <span class="section-index">PROJET 02 / DATA ANALYSIS</span>
+      <h1>Explorer les données pour comprendre la <span>performance commerciale.</span></h1>
+      <p class="case-lead">
+        Une démarche d'analyse réalisée avec Python pour inspecter, nettoyer et explorer un jeu de données d'activité commerciale, puis transformer les résultats en observations compréhensibles.
+      </p>
+      <div class="case-tags">
+        <span>Python</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>SciPy</span><span>Jupyter Notebook</span>
+      </div>
+      <div class="case-stats">
+        <div class="case-stat"><strong>2 460</strong><span>Lignes initiales</span></div>
+        <div class="case-stat"><strong>1 908</strong><span>Lignes conservées</span></div>
+        <div class="case-stat"><strong>492</strong><span>Lignes rejetées</span></div>
+        <div class="case-stat"><strong>11</strong><span>Colonnes dans le dataset</span></div>
+      </div>
+    </section>
+
+    <section class="section case-section">
+      <span class="section-index">01 / CONTEXTE & OBJECTIFS</span>
+      <h2>Comprendre la qualité et la structure des données.</h2>
+      <div class="case-two-col">
+        <div>
+          <p>
+            Le travail porte sur un jeu de données commercial contenant des informations sur les clients, les dates, les régions, les services, les canaux d'acquisition, le chiffre d'affaires, les dépenses et la satisfaction.
+          </p>
+          <p>
+            L'objectif était de préparer un dataset exploitable, d'étudier les performances commerciales et financières, puis d'examiner certaines relations statistiques entre les variables.
+          </p>
+        </div>
+        <div class="case-panel">
+          <h3>Questions explorées</h3>
+          <ul>
+            <li>Quelle est l'évolution mensuelle du chiffre d'affaires ?</li>
+            <li>Quelles régions et quels services contribuent le plus au chiffre d'affaires ?</li>
+            <li>Comment évolue le bénéfice estimé ?</li>
+            <li>Quelle relation observe-t-on entre les dépenses et le chiffre d'affaires ?</li>
+          </ul>
+        </div>
+      </div>
+      <figure class="case-figure">
+        <img src="assets/images/projects/tp-module-2/donnees-brutes.png" alt="Capture réelle du fichier Excel contenant les données brutes" loading="lazy">
+        <figcaption>Fichier source ouvert dans Excel : aperçu des données brutes avant les étapes de préparation et de nettoyage.</figcaption>
+      </figure>
+    </section>
+
+    <section class="section case-section">
+      <span class="section-index">02 / PRÉPARATION & NETTOYAGE</span>
+      <h2>Contrôler les données avant l'analyse.</h2>
+      <p>
+        Le dataset initial comporte 2 460 lignes et 11 colonnes. Après inspection et application des règles de qualité définies pour l'exercice, 1 908 lignes ont été conservées et 492 lignes ont été rejetées. Les lignes rejetées ont été isolées afin de préserver leur traçabilité.
+      </p>
+      <figure class="case-figure">
+        <img src="assets/images/projects/tp-module-2/dataset-nettoye.png" alt="Sortie du notebook montrant les dimensions et un aperçu du dataset nettoyé" loading="lazy">
+        <figcaption>Sortie réelle du notebook : dimensions du dataset nettoyé (1 908 lignes et 11 colonnes) et aperçu des premières observations.</figcaption>
+      </figure>
+      <div class="case-result-list">
+        <div class="case-result"><strong>Inspection</strong><span>Vérification des dimensions, des colonnes et des premières observations.</span></div>
+        <div class="case-result"><strong>Validation</strong><span>Contrôle des règles de qualité retenues pour le traitement.</span></div>
+        <div class="case-result"><strong>Séparation</strong><span>Conservation des lignes acceptées et export des lignes rejetées.</span></div>
+        <div class="case-result"><strong>Valeurs extrêmes</strong><span>Repérage statistique à l'aide de la méthode de l'écart interquartile (IQR).</span></div>
+      </div>
+      <figure class="case-figure">
+        <img src="assets/images/projects/tp-module-2/valeurs-extremes.png" alt="Capture du calcul de l'écart interquartile et du seuil supérieur" loading="lazy">
+        <figcaption>Extrait du notebook consacré au calcul des quartiles, de l'IQR et au repérage des valeurs extrêmes du chiffre d'affaires.</figcaption>
+      </figure>
+      <div class="case-note">
+        Les 15 observations dépassant le seuil statistique supérieur de 321 259,25 FCFA ont été étudiées dans l'analyse de sensibilité. Elles n'ont pas été automatiquement supprimées du dataset nettoyé.
+      </div>
+    </section>
+
+    <section class="section case-section">
+      <span class="section-index">03 / ANALYSE COMMERCIALE</span>
+      <h2>Lire les performances sous plusieurs angles.</h2>
+      <p>Les agrégations avec Pandas permettent de comparer le chiffre d'affaires dans le temps, selon les régions et selon les services.</p>
+      <figure class="case-figure">
+        <img src="assets/images/projects/tp-module-2/ca-mensuel.png" alt="Graphique réel de l'évolution mensuelle du chiffre d'affaires" loading="lazy">
+        <figcaption>Évolution mensuelle du chiffre d'affaires sur la période 2024–2025. Mars 2025 est le mois le plus élevé (39 920 190 FCFA) et février 2025 le plus faible (9 423 498 FCFA).</figcaption>
+      </figure>
+      <div class="case-gallery">
+        <figure class="case-figure">
+          <img src="assets/images/projects/tp-module-2/ca-regions.png" alt="Graphique réel du chiffre d'affaires total par région" loading="lazy">
+          <figcaption>Chiffre d'affaires total par région. Le Zou arrive en tête avec 78 804 891 FCFA, suivi du Mono et de la Donga.</figcaption>
+        </figure>
+        <figure class="case-figure">
+          <img src="assets/images/projects/tp-module-2/ca-services.png" alt="Graphique réel du chiffre d'affaires total par service" loading="lazy">
+          <figcaption>Chiffre d'affaires par service. Le développement web représente le montant le plus élevé, avec 149 563 296 FCFA.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section case-section">
+      <span class="section-index">04 / ANALYSE FINANCIÈRE</span>
+      <h2>Étudier le bénéfice estimé.</h2>
+      <p>
+        Un bénéfice estimé a été calculé comme la différence entre le chiffre d'affaires et les dépenses. Les montants ont ensuite été agrégés par mois afin d'observer leur évolution sur les 24 mois étudiés.
+      </p>
+      <figure class="case-figure">
+        <img src="assets/images/projects/tp-module-2/benefice-mensuel.png" alt="Capture réelle du calcul et de la visualisation du bénéfice estimé mensuel" loading="lazy">
+        <figcaption>Calcul du bénéfice estimé (chiffre d'affaires moins dépenses) et visualisation mensuelle. Le bénéfice estimé est positif sur les 24 mois étudiés ; le maximum est observé en mars 2025 (34 684 035 FCFA).</figcaption>
+      </figure>
+      <div class="case-note">
+        Il s'agit d'un bénéfice estimé à partir des deux colonnes disponibles dans le dataset, et non d'un résultat comptable certifié.
+      </div>
+    </section>
+
+    <section class="section case-section">
+      <span class="section-index">05 / ANALYSE STATISTIQUE</span>
+      <h2>Examiner la relation entre dépenses et chiffre d'affaires.</h2>
+      <p>
+        Le coefficient de corrélation de Pearson calculé sur l'ensemble des observations est de 0,071. L'analyse a ensuite été comparée à une version excluant temporairement les 15 valeurs extrêmes de chiffre d'affaires identifiées avec le seuil IQR. La corrélation de Pearson obtenue sur les 1 893 observations restantes est d'environ 0,809. La corrélation de Spearman sur les données complètes est d'environ 0,815.
+      </p>
+      <div class="case-gallery">
+        <figure class="case-figure">
+          <img src="assets/images/projects/tp-module-2/correlation-complete.png" alt="Diagramme de dispersion réel des dépenses et du chiffre d'affaires sur les données complètes" loading="lazy">
+          <figcaption>Données complètes : les valeurs extrêmes influencent fortement l'échelle du graphique et le coefficient de Pearson.</figcaption>
+        </figure>
+        <figure class="case-figure">
+          <img src="assets/images/projects/tp-module-2/correlation-sans-extremes.png" alt="Diagramme de dispersion réel sans les 15 valeurs extrêmes" loading="lazy">
+          <figcaption>Visualisation après exclusion temporaire des 15 observations dépassant le seuil statistique : la tendance ascendante devient plus visible.</figcaption>
+        </figure>
+      </div>
+      <div class="case-note">
+        Une corrélation indique une association statistique, pas une relation de causalité. L'exclusion temporaire des valeurs extrêmes sert ici à étudier leur influence ; elle ne signifie pas que ces observations sont nécessairement erronées.
+      </div>
+    </section>
+
+    <section class="section case-section">
+      <span class="section-index">06 / BILAN</span>
+      <h2>Ce que ce projet m'a permis de mettre en pratique.</h2>
+      <div class="case-two-col">
+        <div class="case-panel">
+          <h3>Compétences mobilisées</h3>
+          <ul>
+            <li>Lecture et inspection de fichiers CSV et Excel.</li>
+            <li>Nettoyage et validation avec Pandas.</li>
+            <li>Regroupements et agrégations avec <code>groupby()</code>.</li>
+            <li>Calcul d'indicateurs financiers simples.</li>
+            <li>Visualisation avec Matplotlib.</li>
+            <li>Corrélations de Pearson et de Spearman avec SciPy/Pandas.</li>
+          </ul>
+        </div>
+        <div class="case-panel">
+          <h3>Enseignements</h3>
+          <ul>
+            <li>La qualité des données conditionne l'interprétation des analyses.</li>
+            <li>Les agrégations révèlent des différences temporelles, régionales et par service.</li>
+            <li>Les valeurs extrêmes peuvent modifier fortement certains indicateurs statistiques.</li>
+            <li>Les résultats doivent être interprétés avec prudence et dans leur contexte.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="case-actions">
+        <a class="btn btn-primary" href="index.html#projects">Retour aux projets <span>↗</span></a>
+        <a class="btn btn-quiet" href="index.html#contact">Me contacter <span>↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand" href="index.html#home">JP<span>.</span><small>DATA</small></a>
+    <span>© <span id="year"></span> Jacques Philippe FADONOUGBO. Tous droits réservés.</span>
+    <a href="#" class="back-to-top">RETOUR EN HAUT ↑</a>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
