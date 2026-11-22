@@ -1,0 +1,22 @@
+PORTFOLIO — NOTES DE CORRECTION
+
+Cette archive contient le site complet et ses ressources locales.
+
+Correctifs inclus :
+- dimensions fixes et responsives pour les logos de compétences ;
+- dimensions fixes pour les icônes de contact ;
+- images et graphiques limités à la largeur de leur conteneur ;
+- lien vers l'étude de cas rendu visible sur écran tactile sans survol ;
+- script JavaScript sécurisé lorsque l'élément #year n'existe pas.
+
+IMPORTANT POUR LE TEST MOBILE
+Ne pas ouvrir uniquement index.html depuis une pièce jointe WhatsApp.
+Extraire l'archive complète en conservant les dossiers, puis publier l'ensemble
+du contenu de enagnon-portfolio-main sur l'hébergement du site (ou utiliser
+un serveur local). Les fichiers style.css, script.js, portrait-jacques.png
+et assets/images/... doivent rester à leurs emplacements relatifs.
+
+La page d'étude de cas est :
+project-data-analysis.html
+
+Depuis la page d'accueil, le lien du projet 02 pointe vers cette page.

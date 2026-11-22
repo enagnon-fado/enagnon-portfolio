@@ -1,0 +1,29 @@
+Modifications apportées au portfolio
+=====================================
+
+1. index.html
+   - Remplacement de la deuxième carte provisoire par le projet
+     « Analyse exploratoire de données avec Python ».
+   - Ajout d'un lien vers project-data-analysis.html.
+   - Les autres sections de la page d'accueil sont conservées.
+
+2. project-data-analysis.html
+   - Nouvelle page indépendante d'étude de cas.
+   - Navigation et footer cohérents avec le site existant.
+   - Présentation du contexte, du nettoyage, des analyses commerciales,
+     de l'analyse financière, des corrélations et du bilan.
+
+3. style.css
+   - Ajout de styles pour la nouvelle page et l'aperçu du projet.
+   - Réutilisation des variables, couleurs et polices du site existant.
+   - Adaptation responsive pour tablette et mobile.
+
+4. assets/images/projects/tp-module-2/
+   - Captures d'écran réelles fournies dans la conversation.
+   - Les images n'ont pas été recréées.
+
+À vérifier avant publication :
+- Ouvrir index.html et project-data-analysis.html dans un navigateur.
+- Vérifier l'affichage sur ordinateur et téléphone.
+- Vérifier les liens de navigation.
+- Publier tous les fichiers du dossier ensemble sur GitHub Pages.
